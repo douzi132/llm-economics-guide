@@ -2,29 +2,226 @@ format: jb-book
 root: content/intro
 title: "大语言模型经济学指南"
 
-chapters:
-- file: content/chapter04/index
-  title: "第4章：通义千问API实战"
-  sections:
-  - file: content/chapter04/api_basics
-    title: "4.1 API基础使用"
-  - file: content/chapter04/performance_test
-    title: "4.2 性能测试与分析"
-  - file: content/chapter04/cost_analysis
-    title: "4.3 成本分析与优化"
+parts:
+- caption: "第一部分：人工智能和大语言模型的技术基础"
+  chapters:
+  - file: content/chapter01/index
+    title: "第1章：人工智能及其演变"
+    sections:
+    - file: content/chapter01/ai-overview
+      title: "1.1 人工智能概述：定义与核心概念"
+    - file: content/chapter01/ai-history
+      title: "1.2 AI的历史演进：关键里程碑与范式"
+    - file: content/chapter01/technical-depth
+      title: "1.3 技术深度：AI范式转变的数学基础"
+    - file: content/chapter01/economic-insights
+      title: "1.4 经济与管理启示：AI对增长模型的影响"
+    - file: content/chapter01/recent-research
+      title: "1.5 最新研究进展：2024-2025年AI发展与经济洞见"
 
-- file: content/chapter07/index
-  title: "第7章：本地部署方案"
-  sections:
-  - file: content/chapter07/local_setup
-    title: "7.1 本地环境搭建"
-  - file: content/chapter07/performance_optimization
-    title: "7.2 性能优化策略"
+  - file: content/chapter02/index
+    title: "第2章：机器学习基础：算法与数学原理"
+    sections:
+    - file: content/chapter02/ml-overview
+      title: "2.1 机器学习概述：范式、历史与经管相关性"
+    - file: content/chapter02/core-concepts
+      title: "2.2 核心概念：学习类型、损失函数与优化"
+    - file: content/chapter02/technical-depth
+      title: "2.3 技术深度：数学公式与伪代码示例"
+    - file: content/chapter02/business-applications
+      title: "2.4 经管视角：ML在预测与资源分配中的应用"
+    - file: content/chapter02/statistical-integration
+      title: "2.5 增强内容：统计假设检验与ML的整合"
+    - file: content/chapter02/recent-advances
+      title: "2.6 最新研究进展：2025年突破与经管启示"
 
-- file: content/chapter08/index
-  title: "第8章：应用开发实战"
-  sections:
-  - file: content/chapter08/langchain_integration
-    title: "8.1 LangChain集成"
-  - file: content/chapter08/rag_system
-    title: "8.2 RAG系统开发"
+  - file: content/chapter03/index
+    title: "第3章：自然语言处理（NLP）的技术基础"
+    sections:
+    - file: content/chapter03/nlp-overview
+      title: "3.1 NLP概述：定义、核心概念与发展历程"
+    - file: content/chapter03/core-technologies
+      title: "3.2 NLP的核心技术：分词、词嵌入和序列模型"
+    - file: content/chapter03/technical-depth
+      title: "3.3 技术深度：向量空间模型的数学表示"
+    - file: content/chapter03/business-applications
+      title: "3.4 经管应用：NLP在财务报告与市场舆情分析"
+    - file: content/chapter03/practical-exercises
+      title: "3.5 实践练习：使用Python处理经济文本数据"
+    - file: content/chapter03/recent-advances
+      title: "3.6 最新研究进展：2025年NLP领域突破"
+
+  - file: content/chapter04/index
+    title: "第4章：理解大语言模型（LLM）：架构与原理"
+    sections:
+    - file: content/chapter04/llm-overview
+      title: "4.1 LLM概述：定义、演变与重要性"
+    - file: content/chapter04/transformer-architecture
+      title: "4.2 Transformer架构深度解析"
+    - file: content/chapter04/attention-mechanism
+      title: "4.3 技术深度：注意力机制与多头注意力"
+    - file: content/chapter04/uncertainty-handling
+      title: "4.4 经管重要性：LLM处理不确定性"
+    - file: content/chapter04/model-comparison
+      title: "4.5 主流大语言模型对比分析"
+    - file: content/chapter04/qwen-analysis
+      title: "4.6 Qwen模型技术深度解析 ⭐"
+
+- caption: "第二部分：LLM的技术机制与高级工具"
+  chapters:
+  - file: content/chapter05/index
+    title: "第5章：LLM训练与优化算法"
+    sections:
+    - file: content/chapter05/training-overview
+      title: "5.1 LLM训练概述与范式"
+    - file: content/chapter05/training-process
+      title: "5.2 训练过程：预训练、微调与高效方法"
+    - file: content/chapter05/optimization-algorithms
+      title: "5.3 技术深度：优化算法的数学细节"
+    - file: content/chapter05/cost-analysis
+      title: "5.4 经管焦点：LLM训练成本的经济分析"
+    - file: content/chapter05/distributed-training
+      title: "5.5 技术增强：分布式训练示例"
+    - file: content/chapter05/recent-advances
+      title: "5.6 最新研究进展：2025年训练领域突破"
+
+  - file: content/chapter06/index
+    title: "第6章：LLM的推理与评估：从提示到输出"
+    sections:
+    - file: content/chapter06/inference-overview
+      title: "6.1 LLM推理与评估概述"
+    - file: content/chapter06/prompt-engineering
+      title: "6.2 核心概念：提示工程与链式推理"
+    - file: content/chapter06/probability-models
+      title: "6.3 技术深度：概率模型与不确定性量化"
+    - file: content/chapter06/risk-assessment
+      title: "6.4 应用：LLM在风险评估中的推理优化"
+    - file: content/chapter06/ab-testing
+      title: "6.5 增强内容：A/B测试框架评估LLM决策"
+    - file: content/chapter06/recent-advances
+      title: "6.6 最新研究进展：2025年突破"
+
+  - file: content/chapter07/index
+    title: "第7章：高级LLM技术和扩展"
+    sections:
+    - file: content/chapter07/advanced-overview
+      title: "7.1 高级LLM概述：从基础到扩展"
+    - file: content/chapter07/core-technologies
+      title: "7.2 核心高级技术：RAG、多模态与联邦学习"
+    - file: content/chapter07/knowledge-integration
+      title: "7.3 技术深度：知识图谱整合和蒸馏技术"
+    - file: content/chapter07/enterprise-applications
+      title: "7.4 经管视角：定制LLM用于供应链优化"
+    - file: content/chapter07/case-studies
+      title: "7.5 案例研究：模拟企业级LLM部署"
+    - file: content/chapter07/local-deployment
+      title: "7.6 本地LLM部署与管理 ⭐"
+    - file: content/chapter07/hybrid-architecture
+      title: "7.7 混合部署架构设计"
+
+- caption: "第三部分：经济学和管理中的技术应用"
+  chapters:
+  - file: content/chapter08/index
+    title: "第8章：LLM在经济分析和预测中的技术应用"
+    sections:
+    - file: content/chapter08/economic-overview
+      title: "8.1 LLM在经济分析中的概述"
+    - file: content/chapter08/macro-integration
+      title: "8.2 核心应用：宏观模型整合与时间序列预测"
+    - file: content/chapter08/causal-inference
+      title: "8.3 技术深度：LLM处理非平稳数据和因果推理"
+    - file: content/chapter08/policy-analysis
+      title: "8.4 示例：使用LLM分析政策文本并预测通胀"
+    - file: content/chapter08/limitations
+      title: "8.5 增强讨论：技术局限与校正算法"
+    - file: content/chapter08/recent-advances
+      title: "8.6 最新研究进展：2025年经济分析领域突破"
+
+  - file: content/chapter09/index
+    title: "第9章：LLM在管理和商业战略中的技术应用"
+    sections:
+    - file: content/chapter09/management-overview
+      title: "9.1 管理学中LLM概述"
+    - file: content/chapter09/strategic-applications
+      title: "9.2 核心用例：战略模拟、自动化决策和运营AI"
+    - file: content/chapter09/reinforcement-learning
+      title: "9.3 技术深度：强化学习与LLMs在多代理系统"
+    - file: content/chapter09/porter-framework
+      title: "9.4 经管视角：波特五力模型的技术扩展"
+    - file: content/chapter09/supply-chain
+      title: "9.5 案例研究：代码驱动的供应链优化模拟"
+    - file: content/chapter09/recent-advances
+      title: "9.6 最新研究进展：2025年突破"
+
+  - file: content/chapter10/index
+    title: "第10章：LLM在金融和风险管理中的技术应用"
+    sections:
+    - file: content/chapter10/finance-overview
+      title: "10.1 LLM在金融领域的概述"
+    - file: content/chapter10/algorithmic-trading
+      title: "10.2 核心主题：算法交易、VaR模型和欺诈检测"
+    - file: content/chapter10/high-frequency-data
+      title: "10.3 技术深度：高频数据的序列建模"
+    - file: content/chapter10/portfolio-optimization
+      title: "10.4 整合：非结构化数据用于投资组合优化"
+    - file: content/chapter10/bias-detection
+      title: "10.5 伦理讨论：偏见检测的数学方法"
+    - file: content/chapter10/recent-advances
+      title: "10.6 最新研究进展：2025年金融领域突破"
+
+- caption: "第四部分：挑战、伦理和未来方向"
+  chapters:
+  - file: content/chapter11/index
+    title: "第11章：LLM的伦理、法律和社会影响"
+    sections:
+    - file: content/chapter11/ethical-overview
+      title: "11.1 LLM部署中的伦理、法律与社会维度概述"
+    - file: content/chapter11/bias-fairness
+      title: "11.2 偏见与公平性问题"
+    - file: content/chapter11/privacy-security
+      title: "11.3 隐私保护与数据安全"
+    - file: content/chapter11/regulatory-framework
+      title: "11.4 监管框架与合规要求"
+    - file: content/chapter11/social-impact
+      title: "11.5 社会影响与责任AI"
+
+  - file: content/chapter12/index
+    title: "第12章：LLM的技术挑战和局限性"
+    sections:
+    - file: content/chapter12/introduction
+      title: "12.0 引言：热潮之下的冷思考"
+    - file: content/chapter12/core-challenges
+      title: "12.1 LLM挑战的三大支柱"
+    - file: content/chapter12/technical-diagnostics
+      title: "12.2 技术深潜：诊断与防御"
+    - file: content/chapter12/economic-implications
+      title: "12.3 LLM局限性的经济与战略格局"
+    - file: content/chapter12/mitigation-strategies
+      title: "12.4 实用缓解策略：人机回环架构"
+    - file: content/chapter12/regulatory-progress
+      title: "12.5 前沿动态：最新研究与监管进展"
+    - file: content/chapter12/future-outlook
+      title: "12.6 章节总结与未来展望"
+
+  - file: content/chapter13/index
+    title: "第13章：案例研究、实践项目和技术实验"
+    sections:
+    - file: content/chapter13/enterprise-architecture
+      title: "13.1 企业级LLM部署的通用架构剖析"
+    - file: content/chapter13/case-studies
+      title: "13.2 综合案例研究"
+    - file: content/chapter13/practical-projects
+      title: "13.3 实践项目指南"
+    - file: content/chapter13/technical-experiments
+      title: "13.4 技术实验与验证"
+
+- caption: "附录"
+  chapters:
+  - file: content/appendices/glossary
+    title: "附录A：术语表"
+  - file: content/appendices/resources
+    title: "附录B：参考资源"
+  - file: content/appendices/code-examples
+    title: "附录C：代码示例"
+  - file: content/appendices/datasets
+    title: "附录D：数据集资源"

@@ -1,38 +1,110 @@
 title: "大语言模型经济学指南"
 author: "douzi132"
 logo: assets/images/logo.png
+copyright: "2025"
 
+# 执行设置
 execute:
   execute_notebooks: cache
   cache: ""
   exclude_patterns: []
-  timeout: 120
+  timeout: 300
+  allow_errors: false
+  stderr_output: show
 
+# 启动按钮
 launch_buttons:
   binderhub_url: "https://mybinder.org"
   colab_url: "https://colab.research.google.com"
+  notebook_interface: "jupyterlab"
+  thebe: true
 
+# 仓库设置
 repository:
   url: https://github.com/douzi132/llm-economics-guide
   path_to_book: ""
   branch: main
 
+# HTML设置
 html:
   use_repository_button: true
   use_issues_button: true
   use_edit_page_button: true
-  navbar_number_sections: false
+  use_download_button: true
+  navbar_number_sections: true
   announcement: "🚀 本教程提供交互式代码环境，点击右上角按钮在线运行！"
+  home_page_in_navbar: false
+  use_multitoc_numbering: true
+  show_navbar_depth: 2
+  extra_footer: |
+    <div>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+    <img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    本书采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议
+    </div>
 
+# 解析设置
 parse:
   myst_enable_extensions:
     - colon_fence
     - deflist
     - linkify
     - substitution
+    - tasklist
+    - html_admonition
+    - html_image
+    - dollarmath
+    - amsmath
+    - attrs_inline
+    - attrs_block
 
+# Sphinx设置
 sphinx:
   config:
     html_theme_options:
       repository_url: https://github.com/douzi132/llm-economics-guide
       use_repository_button: true
+      use_issues_button: true
+      use_edit_page_button: true
+      use_download_button: true
+      path_to_docs: ""
+      repository_branch: main
+      launch_buttons:
+        binderhub_url: "https://mybinder.org"
+        colab_url: "https://colab.research.google.com"
+      navigation_with_keys: false
+      show_toc_level: 2
+      collapse_navigation: false
+      navigation_depth: 3
+      show_navbar_depth: 2
+    html_title: "大语言模型经济学指南"
+    html_logo: assets/images/logo.png
+    html_favicon: assets/images/favicon.ico
+    language: zh_CN
+
+  extra_extensions:
+    - sphinx_copybutton
+    - sphinx_external_toc
+    - sphinx_jupyterbook_latex
+    - sphinx_multitoc_numbering
+    - sphinx_thebe
+    - sphinx_togglebutton
+    - sphinxext.opengraph
+    - sphinx_design
+
+# LaTeX设置
+latex:
+  latex_engine: xelatex
+  use_jupyterbook_latex: true
+  latex_documents:
+    targetname: book.tex
+
+# 高级设置
+only_build_toc_files: false
+
+# 自定义CSS和JS
+html:
+  extra_css:
+    - _static/custom.css
+  extra_js:
+    - _static/custom.js
