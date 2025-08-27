@@ -1,0 +1,38 @@
+title: "大语言模型经济学指南"
+author: "douzi132"
+logo: assets/images/logo.png
+
+execute:
+  execute_notebooks: cache
+  cache: ""
+  exclude_patterns: []
+  timeout: 120
+
+launch_buttons:
+  binderhub_url: "https://mybinder.org"
+  colab_url: "https://colab.research.google.com"
+
+repository:
+  url: https://github.com/douzi132/llm-economics-guide
+  path_to_book: ""
+  branch: main
+
+html:
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
+  navbar_number_sections: false
+  announcement: "🚀 本教程提供交互式代码环境，点击右上角按钮在线运行！"
+
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - deflist
+    - linkify
+    - substitution
+
+sphinx:
+  config:
+    html_theme_options:
+      repository_url: https://github.com/douzi132/llm-economics-guide
+      use_repository_button: true

@@ -1,0 +1,4 @@
+#!/bin/bash
+# MyBinder构建后脚本
+pip install --upgrade pip
+jupyter-book build .

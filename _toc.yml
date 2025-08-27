@@ -1,0 +1,30 @@
+format: jb-book
+root: content/intro
+title: "大语言模型经济学指南"
+
+chapters:
+- file: content/chapter04/index
+  title: "第4章：通义千问API实战"
+  sections:
+  - file: content/chapter04/api_basics
+    title: "4.1 API基础使用"
+  - file: content/chapter04/performance_test
+    title: "4.2 性能测试与分析"
+  - file: content/chapter04/cost_analysis
+    title: "4.3 成本分析与优化"
+
+- file: content/chapter07/index
+  title: "第7章：本地部署方案"
+  sections:
+  - file: content/chapter07/local_setup
+    title: "7.1 本地环境搭建"
+  - file: content/chapter07/performance_optimization
+    title: "7.2 性能优化策略"
+
+- file: content/chapter08/index
+  title: "第8章：应用开发实战"
+  sections:
+  - file: content/chapter08/langchain_integration
+    title: "8.1 LangChain集成"
+  - file: content/chapter08/rag_system
+    title: "8.2 RAG系统开发"
